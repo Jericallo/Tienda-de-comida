@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Proyecto</string>
+    <string-array name="moderador_options">
+        <item>Admin</item>
+        <item>Usuario</item>
+    </string-array>
+</resources>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivPhoto"
+        android:layout_toEndOf="@+id/ivPhoto"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        tools:text="Nombre" />
+
+    <TextView
+        android:id="@+id/tvCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvnombre"
+        android:layout_toRightOf="@+id/ivPhoto"
+        android:layout_toEndOf="@+id/ivPhoto"
+        tools:text="Email" />
+
+    <TextView
+        android:id="@+id/tvContrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCorreo"
+        android:layout_toRightOf="@+id/ivPhoto"
+        android:layout_toEndOf="@+id/ivPhoto"
+        tools:text="contraseña" />
+    <TextView
+        android:id="@+id/tvTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvContrase"
+        android:layout_toRightOf="@+id/ivPhoto"
+        android:layout_toEndOf="@+id/ivPhoto"
+        tools:text="Tipo de usuario" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="62dp"
+        android:layout_toEndOf="@+id/tvTipo"
+        android:text="Eliminar"
+        android:layout_centerInParent="true"/>
+    />
+</RelativeLayout>
